@@ -1,0 +1,18 @@
+<div class="container">
+  <div class="row">
+    <div class="col">
+      <label for="cardFront">Card Front</label>
+      <input type="text" class="form-control" id="cardFront" [(ngModel)]="cardFront"/>
+    </div>
+    <div class="col">
+      <label for="cardBack">Card Back</label>
+      <input type="text" class="form-control" id="cardBack" [(ngModel)]="cardBack"/>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col">
+      <button class="btn btn-primary" (click)="createCard()">Create</button>
+      <button class="btn btn-danger" (click)="clearCard()">Clear</button>
+    </div>
+  </div>
+</div>
